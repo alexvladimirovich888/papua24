@@ -1,0 +1,35 @@
+
+:root{
+  --bg1: #0b2b1f;
+  --accent: #ffd27a;
+  --card: rgba(255,255,255,0.04);
+  --muted: #e8f7ee;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background: linear-gradient(180deg,#07221a,#0b2b1f);color:var(--muted);}
+
+.topbar{padding:18px 16px;text-align:center;background:rgba(0,0,0,0.18);box-shadow:0 4px 14px rgba(0,0,0,0.4);position:relative;z-index:5}
+.title{margin:0;font-size:1.6rem;color:var(--accent)}
+
+.container{max-width:1000px;margin:24px auto;padding:16px;position:relative;z-index:5}
+
+.stream-frame{width:100%;max-width:880px;aspect-ratio:16/9;border-radius:12px;background:#000;border:3px solid #2f7f5f;margin:0 auto;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+
+.stream-placeholder{text-align:center;padding:12px;color:var(--muted)}
+
+.play{font-size:56px;background:linear-gradient(#ffd27a,#ffb84d);width:90px;height:90px;line-height:90px;border-radius:14px;display:inline-block;box-shadow:0 6px 14px rgba(0,0,0,0.4);transform:translateY(-6px)}
+
+.stream-text{margin-top:14px;font-size:1.03rem;color:var(--muted);max-width:78%;margin-left:auto;margin-right:auto}
+
+.about,.guidelines,.support,.community{background:var(--card);padding:16px;border-radius:10px;margin-top:18px}
+
+.about h2,.guidelines h2,.support h2,.community h2{color:var(--accent)}
+
+.guidelines ul{line-height:1.6}
+
+.footer{text-align:center;margin-top:22px;opacity:0.9}
+
+/* falling emojis */
+#falling{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.fall{position:absolute;font-size:26px;will-change:transform,opacity;opacity:0.95;filter:drop-shadow(0 6px 8px rgba(0,0,0,0.35))}
